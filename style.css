@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #111;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url('img/fon.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo-block {
+    margin-bottom: 25px;
+}
+
+.logo-icon img {
+    width: 60px;
+    height: auto;
+}
+
+.logo-block span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.hero-title-top {
+    color: #f1c40f;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero-title-bottom {
+    color: #f1c40f;
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.divider-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.divider-heading::before,
+.divider-heading::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #b2b2b2;
+    margin: 0 20px;
+}
+
+.hero-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #dedede;
+    max-width: 750px;
+    margin: 0 auto 35px auto;
+}
+
+.hero-description strong {
+    color: #f1c40f;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2980b9;
+    color: #ffffff;
+    padding: 16px 36px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.btn:hover {
+    background-color: #2471a3;
+}
+
+.hero-footer {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #aaaaaa;
+    text-transform: uppercase;
+}
+
+.arrow-down {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.container-wide {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-expect {
+    background-color: #ffffff;
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-expect h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.expect-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.expect-card {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.expect-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.expect-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.section-optimization {
+    background-color: #f9f9f9;
+    padding: 70px 20px;
+}
+
+.opt-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.opt-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.opt-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.opt-text {
+    flex: 1.2;
+    min-width: 300px;
+}
+
+.opt-text h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0b2239;
+    margin-bottom: 20px;
+}
+
+.opt-text p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.opt-highlight {
+    color: #0b2239;
+}
+
+.section-skills {
+    position: relative;
+    background: url('img/fon2.jpg') no-repeat center center/cover;
+    padding: 70px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.section-skills h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.skill-item {
+    text-align: center;
+    max-width: 160px;
+}
+
+.skill-icon {
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    color: #2980b9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 15px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.skill-icon img {
+    width: 35px;
+    height: auto;
+    object-fit: contain;
+}
+
+.skill-item p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.section-bonuses {
+    background-color: #eceff1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gift-icon {
+    margin-bottom: 15px;
+}
+
+.bonus-text {
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.section-webinar {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.webinar-img {
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.section-webinar h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.webinar-date {
+    font-size: 22px;
+    font-weight: 900;
+    color: #0277bd;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.webinar-sub {
+    font-size: 13px;
+    color: #666;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #888;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 10px;
+}
+/* Плавная прокрутка */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Переключатель языков */
+.lang-switch {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    display: flex;
+    gap: 4px;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.lang-switch button {
+    background: transparent;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.lang-switch button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.lang-switch button.active {
+    background: #2980b9;
+}
+
+/* Кнопка "наверх" */
+.scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: #2980b9;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, visibility 0.3s;
+    z-index: 1000;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top:hover {
+    background-color: #2471a3;
+}
